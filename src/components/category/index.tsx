@@ -10,6 +10,10 @@ type Props = PressableProps & {
     isSelected?: boolean
 }
 
+export type CategPorps = {
+    data: Props
+}
+
 export function Category({ name, iconId, isSelected = false, ...rest}: Props){
     const Icon = categoriesIcons[iconId]
     return (
